@@ -1,5 +1,57 @@
- HEAD
-# Projeto-academia
+# 🏋️ Projeto Academia
+
+## 📌 Descrição
+
+O **Projeto Academia** é uma aplicação web desenvolvida para auxiliar na organização e gestão de treinos de alunos em academias. A plataforma permite o registro completo de dados dos alunos, acompanhamento de avaliações físicas e a criação de treinos personalizados de forma prática e eficiente.
+
+Além disso, o sistema conta com um recurso de **gamificação**, que incentiva os alunos a manterem consistência e disciplina nos treinos, tornando a experiência mais motivadora, interativa e envolvente.
+
+## 🎯 Problema que resolve
+
+O projeto busca reduzir significativamente o uso de fichas em papel nas academias, promovendo uma gestão mais organizada, sustentável e acessível das informações dos alunos.
+
+## 🚀 Tecnologias utilizadas
+
+* HTML
+* CSS
+* JavaScript
+* TypeScript
+
+### 📚 Bibliotecas e frameworks
+
+* React
+* JSON (para manipulação de dados)
+
+## ⚙️ Como executar o projeto
+
+### 📦 Instalação
+
+```bash
+npm install
+```
+
+### ▶️ Execução
+
+```bash
+npm run dev
+```
+
+## ✨ Funcionalidades
+
+* Cadastro de alunos
+* Registro de avaliações físicas
+* Criação e organização de treinos personalizados
+* Acompanhamento de desempenho dos alunos
+* Sistema de gamificação para aumentar o engajamento
+
+## 📌 Status do projeto
+
+🚧 Em desenvolvimento
+
+
+
+
+
 
 # React + TypeScript + Vite
 
