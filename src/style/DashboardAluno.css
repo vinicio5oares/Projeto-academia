@@ -1,0 +1,160 @@
+:root {
+  --azul-principal: #3FA7B3;
+  --verde-icone: #8FA1C8;
+}
+
+/* ===== TELA ===== */
+.TelaDashboard {
+  min-height: 100vh;
+  background: #D1B7B5;
+  padding-bottom: 120px;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===== HEADER ===== */
+.HeaderDashboard {
+  background: var(--azul-principal);
+  color: white;
+  padding: 18px 32px;
+  display: flex; /* layout em linha para posicionar o menu à esquerda */
+  align-items: center;
+  gap: 12px;
+}
+
+.HeaderMenuButton {
+  background: none;
+  border: none;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HeaderMenuButton svg {
+  width: 26px;
+  height: 26px;
+  color: white; /* garante que os traços fiquem brancos */
+  stroke: white;
+}
+
+.HeaderMenuRight {
+  margin-left: auto; /* empurra o menu para o canto direito */
+}
+
+.HeaderUsuario {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ===== TÍTULO ===== */
+.TituloDashboard {
+  margin: 36px 60px;
+  font-size: 40px;
+  color: var(--azul-principal);
+  font-weight: 800;
+}
+
+/* ===== CONTEÚDO ===== */
+.ConteudoDashboard {
+  padding: 0 72px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== GRÁFICO (RESPONSIVO) ===== */
+.GraficoContainer {
+  background: var(--azul-principal);
+  border-radius: 20px;
+  padding: 24px;       /* ↓ menor */
+  min-height: 260px;   /* ↓ menor */
+  margin-bottom: 36px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 880px) {
+  .GraficoContainer {
+    padding: 36px;
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .GraficoContainer {
+    padding: 20px;
+    min-height: 260px;
+    margin-bottom: 28px;
+  }
+} 
+
+/* ===== BOTÕES ===== */
+.BotoesDashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 36px; /* maior separação entre botões */
+} 
+
+.BotaoDashboard {
+  background: var(--azul-principal);
+  color: white;
+  border: none;
+  border-radius: 34px; /* mais arredondado */
+  padding: 34px 44px; /* padding aumentado */
+  display: flex;
+  align-items: center;
+  gap: 28px; /* gap maior entre ícone e texto */
+  font-size: 28px; /* texto maior */
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+} 
+
+.BotaoDashboard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.26);
+}
+
+.BotaoDashboard svg {
+  width: 44px; /* ícone aumentado */
+  height: 44px;
+  color: var(--verde-icone); /* ícone com a mesma cor do rodapé */
+  stroke: var(--verde-icone);
+} 
+
+.BotaoDashboard svg {
+  width: 40px; /* ícone maior */
+  height: 40px;
+} 
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+  .TituloDashboard {
+    font-size: 22px;
+    margin: 16px;
+  }
+
+  .ConteudoDashboard {
+    padding: 0 16px;
+  }
+
+  .GraficoContainer {
+    padding: 24px;
+    min-height: 340px; /* ligeiro aumento para manter legibilidade */
+  }
+
+  .BotaoDashboard {
+    font-size: 18px;
+    padding: 14px 16px; /* padding móvel ajustado */
+  }
+
+  .BotaoDashboard svg {
+    width: 32px;
+    height: 32px;
+  }
+}

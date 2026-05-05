@@ -1,0 +1,36 @@
+.GraficoCircular {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 420px; /* aumenta o gráfico em telas maiores */
+  filter: drop-shadow(0 0 8px rgba(143, 161, 200, 0.45));
+}
+
+.GraficoCircular circle {
+  transition: stroke-dashoffset 1.4s ease;
+}
+
+.GraficoCircular text {
+  font-weight: bold;
+  fill: #ffffff;
+  font-size: 24px; /* maior por padrão */
+}
+
+/* Contêiner para centralização */
+.ChartContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .GraficoCircular {
+    max-width: 220px; /* reduzido em celular */
+  }
+
+  .GraficoCircular text {
+    font-size: 18px;
+  }
+}

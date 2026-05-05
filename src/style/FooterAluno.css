@@ -1,0 +1,78 @@
+.FooterDashboard {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: var(--azul-principal);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.FooterDashboard button {
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* ÍCONES VERDES */
+.FooterDashboard button svg {
+  color: var(--verde-icone);
+  width: 22px;
+  height: 22px;
+  margin-bottom: 4px;
+}
+
+.FooterDashboard button.ativo {
+  opacity: 1;
+}
+
+/* ================= MOBILE ONLY ================= */
+
+/* 📱 Responsividade APENAS para celular */
+@media (max-width: 480px) {
+  .HeaderDashboard {
+    padding: 14px 16px;
+  }
+
+  .HeaderUsuario {
+    font-size: 14px;
+  }
+
+  .TituloDashboard {
+    font-size: 18px;
+    margin: 12px 16px;
+  }
+
+  .ConteudoDashboard {
+    padding: 0 16px;
+  }
+
+  .GraficoContainer {
+    padding: 16px;
+  }
+
+  .BotaoDashboard {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .BotaoDashboard svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .FooterDashboard {
+    height: 62px;
+  }
+
+  .FooterDashboard button {
+    font-size: 10px;
+  }
+}

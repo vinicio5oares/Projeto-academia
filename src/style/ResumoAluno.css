@@ -1,0 +1,64 @@
+.ResumoCard {
+  background: linear-gradient(180deg, #3FA7B3, #5F7F91);
+  border-radius: 16px;
+  padding: 16px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  margin-bottom: 18px;
+}
+
+.ResumoTitulo {
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.ResumoGrid {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.ResumoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.ResumoItem span {
+  font-size: 10px;
+  opacity: 0.85;
+}
+
+.ResumoItem strong {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.ResumoDestaque {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 12px;
+}
+
+.ResumoDestaque span {
+  font-size: 10px;
+  opacity: 0.85;
+}
+
+.ResumoDestaque strong {
+  font-size: 20px;
+  font-weight: 900;
+  color: #8FA1C8;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 480px) {
+  .ResumoGrid {
+    flex-direction: column;
+  }
+}

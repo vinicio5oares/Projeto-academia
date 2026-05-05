@@ -1,0 +1,122 @@
+/* Tela geral */
+.Tela {
+  background-color: #D1B7B5;
+  min-height: 100vh;
+  padding-bottom: 90px; /* espaço para menu inferior */
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= HEADER ================= */
+.Header {
+  background-color: #3FA7B3;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeaderPag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* ================= DASHBOARD ================= */
+.DashboardCircular {
+  background-color: #ffffff;
+  margin: 26px; /* reduzido ~20% */
+  border-radius: 26px; /* reduzido ~20% */
+  padding: 26px; /* reduzido ~20% */
+  display: flex;
+  align-items: center;
+  gap: 26px; /* reduzido ~20% */
+}
+
+.TextoDash {
+  font-size: 22px; /* reduzido ~20% */
+  font-weight: 700;
+  color: #3FA7B3;
+} 
+
+/* ================= TÍTULO ================= */
+.TituloTreinos {
+  margin: 34px; /* aumentado */
+  font-size: 36px; /* aumentado para combinar com o dashboard */
+  font-weight: 800;
+  color: #3FA7B3;
+} 
+
+/* ================= LISTA ================= */
+.ListaDeTreinos {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 0 16px; /* padding alinhado com a foto */
+  margin-bottom: 24px;
+}
+
+/* ================= CARD ================= */
+.CardTreino {
+  background-color: #3FA7B3;
+  border-radius: 32px; /* bordas maiores como na imagem */
+  padding: 22px 20px; /* padding equilibrado */
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+  min-height: 120px; /* altura maior para aparência similar */
+} 
+
+/* Imagem do exercício */
+.ImagemMusculos {
+  width: 160px;
+  height: 100px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+} 
+
+/* Textos */
+.CardTextos {
+  flex: 1;
+}
+
+.NomeExercicio {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+} 
+
+.NomeProfessor {
+  font-size: 14px;
+  color: #A5959F;
+  margin-top: 6px;
+  margin-bottom: 0;
+} 
+
+/* Botão iniciar */
+.btnIniciar {
+  background-color: #8FA1C8;
+  color: #3FA7B3;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  align-self: center;
+  height: 36px;
+} 
+
+.btnIniciar:hover {
+  background-color: #A5959F;
+}

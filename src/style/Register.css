@@ -1,0 +1,132 @@
+/* Fundo com degradê (igual ao login) */
+.cadastro-container {
+  background: linear-gradient(180deg, #3FA7B3, #5F7F91);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* Caixa central com contorno sutil e sombra (aumentada) */
+.cadastro-box {
+  width: 100%;
+  max-width: 480px; /* maior para acomodar campos maiores */
+  padding: 36px 28px; /* padding aumentado */
+  border-radius: 12px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.34);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza como no login */
+} 
+
+.cadastro-box h2 {
+  color: #8FA1C8;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #fff;
+  gap: 14px; /* espaço maior entre campos */
+}
+
+.cadastro-form label {
+  font-size: 1.05rem; /* label maior */
+  color: #8FA1C8;
+  margin-bottom: 6px;
+  margin-top: 8px;
+  align-self: flex-start;
+}
+
+.cadastro-form input {
+  padding: 14px 16px; /* inputs maiores */
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 1.05rem;
+  outline: none;
+  color: #3FA7B3;
+}
+
+.cadastro-form input:focus {
+  box-shadow: 0 0 12px rgba(143,161,200,0.18);
+} 
+
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* botão centralizado na caixa */
+}
+
+.btn-cadastrar {
+  margin-top: 12px;
+  padding: 14px 22px; /* botão maior */
+  border: none;
+  border-radius: 10px;
+  font-weight: 800;
+  color: #3FA7B3;
+  font-size: 1rem;
+  background-color: var(--verde-icone, #8FA1C8);
+  cursor: pointer;
+  transition: transform 0.12s ease-in-out, box-shadow 0.12s ease-in-out;
+}
+
+.btn-cadastrar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(143,161,200,0.16);
+} 
+
+
+p {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 0.85rem;
+  text-align: center;
+  width: 100%;
+}
+
+p a {
+  color: #8FA1C8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+  .cadastro-box {
+    padding: 18px;
+    max-width: 95%;
+  }
+
+  .cadastro-box h2 {
+    font-size: 1rem;
+  }
+
+  .cadastro-form input {
+    padding: 12px 12px;
+    font-size: 1rem;
+  }
+
+  .btn-cadastrar {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+}

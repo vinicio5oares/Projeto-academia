@@ -1,0 +1,119 @@
+.TelaExercicios {
+  background: #ffffff;
+  min-height: 100vh;
+  padding-bottom: 90px;
+}
+
+/* Header */
+.Header {
+  background: #3FA7B3;
+  color: #fff;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeaderPag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Banner */
+.BannerExercicio {
+  margin-top: 20px; /* 👈 desce a imagem */
+}
+
+.BannerExercicio img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+/* Título */
+.TituloSessao {
+  color: #3FA7B3;
+  margin: 16px;
+  font-weight: 800;
+}
+
+/* Lista */
+.ListaExercicios {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+/* Card */
+.CardExercicio {
+  background: #5F7F91;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.NomeExercicio {
+  color: #8FA1C8;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Séries */
+.Series {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Serie {
+  width: 100%;
+  background: #A5959F;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 14px;
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* NÃO muda a cor inteira */
+.Serie.concluida {
+  background: #A5959F;
+}
+
+/* Bolinha de concluído */
+.Serie.concluida::after {
+  content: "✔";
+  width: 22px;
+  height: 22px;
+  background: #8FA1C8;
+  color: #3FA7B3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Peso */
+.Peso {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.Peso input {
+  width: 70px;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}

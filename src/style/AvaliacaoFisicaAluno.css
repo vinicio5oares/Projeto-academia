@@ -1,0 +1,191 @@
+/* ====== CONFIGURAÇÃO GLOBAL ====== */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #D1B7B5;
+  color: #5F7F91;
+  overflow-x: hidden;
+}
+
+/* Permite rolar até o fim da página */
+.PageContainer {
+  padding-bottom: 120px;
+  margin-top: 90px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ====== TÍTULO PRINCIPAL ====== */
+.TituloPag {
+  text-align: center;
+  margin: 30px 0 25px;
+  color: #3FA7B3;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Linha decorativa abaixo do título */
+.TituloPag::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 8px auto 0;
+  background: linear-gradient(90deg, #3FA7B3, #8FA1C8);
+  border-radius: 20px;
+}
+
+/* ====== CABEÇALHO ====== */
+.Header {
+  width: 100%;
+  height: 70px;
+  background-color: #3FA7B3;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 20;
+}
+
+.HeaderPag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.HeaderPag span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ====== CARDS GERAIS ====== */
+.cardDadosAluno,
+.cardPerimetrosAluno,
+.cardDobrasCultaneas,
+.cardBioImpedancia {
+  width: 90%;
+  max-width: 1100px;
+  margin: 25px auto;
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  border-left: 6px solid #8FA1C8;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  animation: fadeUp 0.6s ease-out;
+}
+
+/* Títulos dos cards */
+.cardDadosAluno h1,
+.cardPerimetrosAluno h1,
+.cardDobrasCultaneas h1,
+.cardBioImpedancia h1 {
+  color: #3FA7B3;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.cardDadosAluno h1::after,
+.cardPerimetrosAluno h1::after,
+.cardDobrasCultaneas h1::after,
+.cardBioImpedancia h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #8FA1C8;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+/* ====== INFORMAÇÕES INTERNAS ====== */
+.lado-esquerdo p,
+.lado-direito p,
+.ladoEsquerdo p,
+.ladoDireito p,
+.cardBioImpedancia p {
+  font-size: 16px;
+  color: #5F7F91;
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+/* Valores importantes */
+.cardBioImpedancia p:nth-child(odd) {
+  font-weight: 700;
+  color: #5F7F91;
+}
+
+/* Card dividido em seções */
+.divisor {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #8FA1C8, #3FA7B3);
+  margin: 15px 0;
+  border-radius: 20px;
+}
+
+/* ======== Layout internos dos cards ======== */
+.cardDobrasCultaneas {
+  display: flex;
+  gap: 20px;
+}
+
+.cardDobrasCultaneas .ladoEsquerdo,
+.cardDobrasCultaneas .ladoDireito {
+  flex: 1;
+}
+
+.cardBioImpedancia {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ======== Menu inferior ======== */
+.MenuInferior {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #3FA7B3;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -4px 14px rgba(0,0,0,0.12);
+}
+
+.BotaoPrincipal {
+  background-color: transparent;
+  border: none;
+  color: #8FA1C8;
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.BotaoPrincipal:hover {
+  transform: scale(1.12);
+  color: white;
+}
+
+/* ====== ANIMAÇÃO ====== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

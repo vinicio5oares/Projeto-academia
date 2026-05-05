@@ -1,0 +1,128 @@
+.PerfilContainer {
+  min-height: 100vh;
+  background: #D1B7B5;
+  padding-bottom: 90px;
+}
+
+/* HEADER */
+.PerfilHeader {
+  background: #3FA7B3;
+  color: #fff;
+  padding: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 800;
+}
+
+/* FOTO */
+.FotoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.FotoPerfil {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #3FA7B3, #5F7F91);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.BtnFoto {
+  margin-top: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #5F7F91;
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+/* BOX */
+.BoxPerfil {
+  background: #fff;
+  margin: 14px;
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.BoxPerfil h3 {
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+/* CAMPOS */
+.Campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.Campo label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #3FA7B3;
+}
+
+.Campo input {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: #D1B7B5;
+  font-size: 12px;
+}
+
+.Linha {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* CARTELA */
+.ResumoDias {
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.CartelaDias {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 8px;
+}
+
+.Dia {
+  height: 14px;
+  background: #A5959F;
+  border-radius: 6px;
+}
+
+.Dia.ativo {
+  background: #8FA1C8;
+}
+
+.Meta {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  color: #5F7F91;
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+  .Linha {
+    flex-direction: column;
+  }
+
+  .CartelaDias {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
